@@ -15,6 +15,12 @@ return new class extends Migration
     {
         Schema::create('db_post', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('image');
+            $table->string('description');
+            $table->string('note');
+            $table->string('status');
+            $table->string('topic_id');
             $table->timestamps();
         });
     }

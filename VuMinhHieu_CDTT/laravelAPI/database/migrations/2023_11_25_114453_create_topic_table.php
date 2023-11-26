@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('db_topic', function (Blueprint $table) {
             $table->id();
+            $table->string('topic_name ');
+            $table->string('note');
             $table->timestamps();
         });
     }

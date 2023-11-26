@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('db_productstore', function (Blueprint $table) {
             $table->id();
+            $table->string('procuct_id');
+            $table->string('quantity');
+            $table->string('price_cost');
+            $table->date('date_added');
+            $table->date('export_date');
             $table->timestamps();
         });
     }
